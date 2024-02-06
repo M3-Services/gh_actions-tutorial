@@ -7,8 +7,7 @@ def reverse_string():
     data = request.get_json()
     string = data['string']
     reversed_string = string[::-1]
-    return {'reversed_string': reversed_string,
-            'status': 200}
+    return {'reversed_string': reversed_string}
 
 @app.route('/square', methods=['POST'])
 def square_number():
